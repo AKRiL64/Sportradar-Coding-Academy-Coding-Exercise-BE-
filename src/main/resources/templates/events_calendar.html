@@ -76,10 +76,9 @@
     <tbody>
     <tr th:each="event : ${events}">
         <td th:text="${event.date}"></td>
-        <td th:text="${event.timeeUTC}"></td>
+        <td th:text="${event.timeUTC}"></td>
 
-        <td th:text="${event.participations != null and !event.participations.isEmpty() ? event.participations[0].team.sport.name : 'N/A'}"></td>
-
+        <td th:text="${event.participations != null and !event.participations.isEmpty() ? event.participations[0].team.sport.name : 'No Sport'}"></td>
         <td>
             <span th:each="part, iterStat : ${event.participations}">
                 <span th:text="${part.team.officialName}"></span>

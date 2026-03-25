@@ -7,10 +7,14 @@ spring:
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
 
   jpa:
     hibernate:
-      ddl-auto: update #auto-creation and updating of tables
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
 
     #setting to help with debugging
     show-sql: true

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Event</title>
+</head>
+<body>
+
+<form th:action="@{/events}" th:object="${event}" method="post">
+
+    Date: <input type="date" th:field="*{date}" required/><br/>
+    Time (e.g., 1830): <input type="number" th:field="*{timeUTC}" required/><br/>
+    Season: <input type="number" th:field="*{season}" value="2026" required/><br/>
+
+    Stadium:
+    <select th:field="*{stadium}">
+        <option th:each="s : ${stadiums}" th:value="${s.id}" th:text="${s.name}"></option>
+    </select><br/>
+
+    Status:
+    <select th:field="*{eventStatus}">
+        <option th:each="st : ${eventStatuses}" th:value="${st.id}" th:text="${st.name}"></option>
+    </select><br/>
+
+    Home Team:
+    <select name="homeTeamId">
+        <option th:each="t : ${teams}" th:value="${t.id}" th:text="${t.officialName}"></option>
+    </select><br/>
+
+    Away Team:
+    <select name="awayTeamId">
+        <option th:each="t : ${teams}" th:value="${t.id}" th:text="${t.officialName}"></option>
+    </select><br/>
+
+    <input type="submit" value="Save"/>
+    <button type="button" onclick="window.location.href='/events'">Cancel</button>
+
+</form>
+
+</body>
+</html>
