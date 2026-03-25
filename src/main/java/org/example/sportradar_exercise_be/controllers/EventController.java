@@ -28,7 +28,7 @@ public class EventController {
     public String viewAllEvents(Model model) {
         List<Event> events = eventService.getAllEventsWithDetails();
         model.addAttribute("events", events);
-        return "events";
+        return "events_calendar";
     }
 
     @GetMapping("/{id}")
