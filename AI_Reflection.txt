@@ -1,0 +1,14 @@
+I used AI tools to:
+- To learn how to handle HTTP requests in Spring Boot applications. Previously I've been working only
+with databases directly, so I needed to bridge this gap. It turned out to be not that hard, but some things
+weren't as obvious as I thought.
+- Also AI was needed to recap basics of HTML as it was quite a long time from my last project that used it in any way.
+- To ask on possible improvements of the code.
+- To help debug all the "500 Internal Server Error" - it turned out to be just a
+typo mistake (quite a few times), was a painful one :(
+- Other than that, I was already familiar with Spring Boot and JPA explicitly, and I had 3 semesters of
+designing ERDs, so there was no need to use AI to help with project architecture.
+
+
+
+

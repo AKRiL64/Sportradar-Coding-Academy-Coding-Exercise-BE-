@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Event Details</title>
+</head>
+<body>
+
+<h1>Match Details</h1>
+
+Matchup:
+<span th:each="part, iterStat : ${event.participations}">
+        <span th:text="${part.team?.officialName}"></span>
+        <span th:if="${!iterStat.last}"> vs. </span>
+</span><br/>
+
+Date: <span th:text="${event.date}"></span><br/>
+Time (UTC): <span th:text="${event.timeUTC}"></span><br/>
+Season: <span th:text="${event.season}"></span><br/>
+Stadium: <span th:text="${event.stadium?.name ?: 'TBD'}"></span><br/>
+Status: <span th:text="${event.eventStatus?.name ?: 'Unknown'}"></span><br/>
+<br/>
+
+<button type="button" onclick="window.location.href='/events'">Back to Calendar</button>
+
+</body>
+</html>

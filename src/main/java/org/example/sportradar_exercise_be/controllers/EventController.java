@@ -33,8 +33,6 @@ public class EventController {
     private final String eventDetails = "event_details";
 
 
-
-    // Update your constructor to include it!
     public EventController(EventService eventService, StadiumRepository stadiumRepository,
                            EventStatusRepository eventStatusRepository, TeamRepository teamRepository,
                            ParticipationRepository participationRepository,
