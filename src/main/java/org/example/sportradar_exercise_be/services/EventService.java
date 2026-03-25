@@ -21,7 +21,9 @@ public class EventService {
     }
 
     public Event getEventById(Long id) {
-        return eventRepository.findById(id).orElse(null);
+        return eventRepository.findById(id).orElseThrow(
+                () -> new IllegalArgumentException("ERROR. Id for event is invalid. ID: " + id)
+        );
     }
 
     @Transactional
