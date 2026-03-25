@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+/// Card types: First Yellow, Second Yellow, Red
 @Entity
 @Table(name = "card_type")
 @Getter

@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+/// Holds country information
 @Entity
 @Table(name = "country")
 @Getter

@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+/// After the end of the event, holds information about goals of a specific team
 @Entity
 @Table(name = "result")
 @Getter

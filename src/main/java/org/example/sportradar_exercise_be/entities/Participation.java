@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+/// Entity for handling many-to-many connection between teams participating and events
 @Entity
 @Table(name = "participation")
 @Getter

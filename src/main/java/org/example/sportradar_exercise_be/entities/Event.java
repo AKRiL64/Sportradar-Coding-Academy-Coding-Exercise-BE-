@@ -7,6 +7,8 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
+/// Holds event information, such as its status, date of holding,
+/// and (optional) information on which stadion is used
 @Entity
 @Table(name = "event")
 @Getter

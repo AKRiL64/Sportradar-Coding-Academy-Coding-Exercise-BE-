@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+/// Holds values for sports that might be fields for teams
 @Entity
 @Table(name = "sport")
 @Getter

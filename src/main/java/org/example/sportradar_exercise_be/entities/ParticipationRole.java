@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+/// Participation roles: Home, Away
 @Entity
 @Table(name = "participation_role")
 @Getter

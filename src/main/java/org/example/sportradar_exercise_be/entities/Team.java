@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+/// Holds information about a specific team: name, sport they do, country they represent
 @Entity
 @Table(name = "team")
 @Getter

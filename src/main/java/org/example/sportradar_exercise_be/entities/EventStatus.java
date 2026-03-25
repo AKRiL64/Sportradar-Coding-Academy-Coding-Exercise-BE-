@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+
+/// Event status examples: Ongoing, Played, Awaiting
 @Entity
 @Table(name = "event_status")
 @Getter

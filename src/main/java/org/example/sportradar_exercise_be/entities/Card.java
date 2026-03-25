@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.apache.catalina.User;
 
+/// Holds cards given to teams during the event
 @Entity
 @Table(name = "card")
 @Getter
